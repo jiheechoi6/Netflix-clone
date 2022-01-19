@@ -1,10 +1,14 @@
 import "./home.scss"
-import {AcUnit} from "@material-ui/icons"
+import Navbar from "../components/navbar/Navbar";
+import img from "./jpg.jpeg"
+import { useState } from "react";
 
 const Home = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
   return (
     <div className="home">
-        <AcUnit/>
+        <Navbar/>
+        <img width="100%" src={img} alt=""/>
     </div>
   );
 };
